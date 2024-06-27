@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            border: 3px dotted red;
+            margin: 10px auto;
+            padding: 10px;
+            box-sizing: border-box;
+            width: 80%;
+
+        }
+        h1{
+            color: black;
+            text-align: center;
+            border: 3px dotted red;
+            box-sizing: border-box;
+        }
+        p{
+            font-size:large;
+            text-align:center;
+            position: relative;
+        }
+        a{
+            text-decoration: none;
+            color: inherit;
+        }
+        h1:hover{
+            background-color: red;
+            color: white;
+        }
+        .img1{
+            width:200px;
+            height: 300px;
+            align-items: center;
+            justify-content: center;
+        }
+        .slike{
+            background-color: rgb(117, 107, 107);
+            border-radius: 10px;
+            color: white;
+            font-size: large;
+            width: 250px;
+            justify-content: center;
+            text-align: center;
+        }
+        .jule{
+            display: none;
+        }
+        .slike:hover .jule{
+            background-color: red;
+            border-radius: 10px;
+            color: black;
+            text-align: center ;
+            display: block;
+            position: absolute;
+            top: 280px;
+            left: 34%;
+            width: 50%;
+            display: block;
+        }
+
+        .stud{
+            width: 30%;
+            height: auto;
+            float: right;
+            padding: 15px;
+            top:-15px;
+          
+            left: 68.64%;
+            position: absolute;
+            
+        }
+        .studi{
+            background-color: red;
+            color: white;
+            text-align: justify;
+            width: 100%;
+            font-size: large;
+            position: relative;
+            height: 460px;
+        }
+        .drzi{
+            float: left;
+            width: 25%;
+        }
+        .red {
+            display: flex;
+            justify-content:space-around;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        .red img {
+            width: 150px;
+            height: 250px;
+            object-fit: cover;
+            margin: 10px;
+            border: 1px solid red;
+        }
+
+        .info {
+            display: none;
+            margin-top: 20px;
+            text-align: center;
+            width: 100%;
+        }
+
+        .red img:hover ~ .info {
+            display: block;
+        }
+        .zadnji{
+            color: white;
+            width: 100%;
+            background-color: red;
+            text-align: center;
+            bottom: 0;
+            left: 0;
+            font-size: large;
+        }
+
+        table{
+            text-align: center;
+            margin: 10px auto;
+            width: 100%;
+            border: 1px solid white;
+        }
+        
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="naslovi" id="gore"><h1>Povijest VERN'a</h1>
+        <p>VERN’ je osnovan 1990. godine, a Veleučilište VERN’ je kao visokoobrazovna institucija pod 
+            imenom Visoke škole za ekonomiju poduzetništva s pravom javnosti počelo djelovati 2000. godine na 
+            temelju dopusnice i rješenja Ministarstva znanosti i tehnologije RH. Kao prvo hrvatsko privatno poslovno 
+            visoko učilište VERN’ je svoju akademsku egzistenciju započeo stručnim studijem Ekonomije poduzetništva koji
+             i danas predstavlja okosnicu VERN’ovih preddiplomskih studijskih programa i 
+            poslovne kulture koju promiču VERN’ovi obrazovni programi.
+            <div class="slike"><img class="img1" src="Jules_Verne.jpg" alt="" > <br><a href="https://hr.wikipedia.org/wiki/Jules_Verne" >Wiki o Julesu</a>
+            <p class="jule"> <span style=" font-weight: bold;">Jules Gabriel Verne</span> (Nantes, 8. veljače 1828. – Amiens, 24. ožujka 1905.) bio je francuski romanopisac, pjesnik i dramatičar. <br> Najpoznatiji je po svojem nizu romana Neobična putovanja. Verne je također pisao razne kratke priče, kazališne komade,
+                 razne romane, eseje i poeziju. <br> Njegova su djela značajna po izrazitom utjecaju na znanstvenu fantastiku
+                  i na nadrealizam, inovativnoj upotrebi modernističkih literarnih tehnika poput samoreferiranja, <br>
+                   i njihove kompleksne kombinacije pozitivističkih i romantičkih ideologija. </p>
+            </div>
+        </p>
+        <div class="naslovi"><h1 id="studenti">Studenti VERN'a</h1>
+            <p>
+                VERN’ Kultura nudi svim studentima i djelatnicima Sveučilišta VERN’ mogućnost dobivanja ulaznica za mnoge kazališne predstave i glazbene koncerte u institucijama
+                poput Hrvatskog narodnog kazališta u Zagrebu, Zagrebačkog kazališta mladih, Koncertne dvorane Vatroslav Lisinski, 
+                Gradskog dramskog kazališta Gavella i još mnogih drugih.
+                
+            </p>
+            <div class="studi">
+                <h2 style="text-align:left">Udruga studenata VERN'a</h2>
+                <img src="studenti.png" class="stud" alt="">
+                    <ul>
+                        <li>Djelatnosti Udruge:</li>
+                            <ul><li>informiranje i edukacija studenata u ostvarivanju njihovih prava; iniciranje, <br> provođenje i organiziranje projekata, manifestacija,<br> radionica, tečaja, skupova, seminara, izleta, putovanja; te ostalih oblika <br> okupljanja i djelovanja studenata</li></ul>
+                        <li>Kontakt udruge:</li>
+                            <ul><li style="text-decoration: overline white;"><a href="#kontakt">WOW</a></li></ul>
+                    </ul>
+                <h2><a href="https://erasmus-plus.ec.europa.eu/hr" style="text-decoration:underline;">Erasmus+ charter</a></h2>
+                    <ul>
+                        <li>Molim??</li>
+                        <ul><li>Sveučilištu VERN’ dodijeljena je Erasmus proširena sveučilišna povelja, <br> temeljem odluke Izvršne agencije za obrazovanje, audiovizualu politiku i kulturu <br> Europske unije (Bruxelles).</li></ul>
+                        <li><span>Erasmus proširena sveučilišna povelja</span></li>
+                        <ol>
+                            <li>nove perspektive, </li>
+                            <li>novi obzori,</li>
+                            <li>osposobljavanje.</li>
+                        </ol>
+                    </ul>
+                </div>
+            <div class="naslovi"><h1>Predavači:</h1></div>
+            <div class="red">
+                <img src="Ozana-Ramljak.jpg" >
+                <img src="cvelic_bonifacic_josipa.jpg" >
+                <img src="melita_cita.jpg" >
+                <img src="Dabo_foto.jpg">
+                <div class="info"> <span style="background-color: cornsilk; color: red; font-weight: bold;">Profesori su ključni akteri u obrazovnom procesu, odgovorni za oblikovanje budućih generacija kroz svoje znanje, stručnost i pedagoške metode. </span> </div>
+            </div>
+        <div class="naslovi"><h1>Naša prednost</h1>
+            <p>VERN' (Visoka škola za ekonomiju, poduzetništvo i upravljanje Nikola Šubić Zrinski) je privatna visokoškolska ustanova u Hrvatskoj koja nudi različite obrazovne programe. Evo nekoliko prednosti koje VERN' može ponuditi svojim studentima:</p>
+            <ol>
+                <li><span style="font-weight: bold;">Praktično usmjerenje obrazovanja:</span><br>VERN' je poznat po svom pristupu koji naglašava praktična znanja i vještine. <a href="#studenti"><span style="text-decoration: underline red;">Studenti</span></a>  često rade na stvarnim projektima, što im omogućava da steknu iskustvo i primijene teorijska znanja u praksi.</li>
+                <li>
+                    <span style="font-weight: bold;">Bliska suradnja s industrijom:</span> <br> Škola ima snažne veze s poslovnom zajednicom, što može rezultirati raznim prilikama za studente poput stažiranja, mentorskih programa te umrežavanja s profesionalcima iz različitih industrija.
+                </li>
+                <li>
+                    <span style="font-weight: bold;">Inovativni studijski programi:</span> <br>VERN' nudi <a href="https://vern.hr/studiji/"><span style="text-decoration: underline red;">programe</span></a> koji su usmjereni prema potrebama tržišta rada. Programi često prate nove i rastuće sektore kao što su digitalni marketing, poduzetništvo, menadžment u kreativnim industrijama i slično.
+                </li>
+                <li>
+                    <span style="font-weight: bold;">Međunarodna suradnja:</span><br>VERN' također promiče međunarodnu suradnju kroz razmjenu studenata, gostujuće predavače i sudjelovanje u međunarodnim projektima, što doprinosi internacionalizaciji iskustva studenata.
+                </li>
+                <li>
+                    <span style="font-weight: bold;">Stručno osoblje:</span> <br>Škola zapošljava stručno osoblje s bogatim iskustvom iz prakse i akademskog svijeta, što doprinosi kvaliteti obrazovanja i mentorstva.
+                </li>
+                <li>
+                    <span style="font-weight: bold;">Kampus i resursi:</span><br> VERN' raspolaže suvremenim kampusom i infrastrukturom koja podržava učenje i istraživanje, pružajući studentima optimalno okruženje za njihov akademski razvoj.
+                </li>
+            </ol>
+        </div>
+        <div class="zadnji"><caption>Kontakti</caption>
+            <table id="kontakt">
+                <tr>
+                    <th>Lokacija:</th>
+                    <th>Zaposli se:</th>
+                    <th>Kontakti:</th>
+                    <th>Radno vrijeme:</th>
+                </tr>
+                <tr>
+                    <td>Palmotićeva 82/1</td>
+                    <td>Tražimo baš tebe!</td>
+                    <td>email:vern@vern.hr</td>
+                    <td>24/7</td>
+                </tr>
+                <tr>
+                    <td><a href="https://www.google.com/maps/place/Vern/@45.8059032,15.9793704,17z/data=!3m1!4b1!4m6!3m5!1s0x4765d6fd9613d863:0xe8e99c87182d0c24!8m2!3d45.8058995!4d15.9819453!16s%2Fm%2F0cr1n00?entry=ttu"><img src="pngtree-vector-location-icon-png-image_3989816.jpg" alt="" style="width: 100px; height: 100px;"></a></td>
+                    <td><a href="https://burzarada.hzz.hr/Posloprimac_RadnaMjesta.aspx?AspxAutoDetectCookieSupport=1"><img src="prst.jpg" style="width: 100px; height: 100px;"></a></td>
+                    <td><a href="https://vern.hr/o-vernu/kontakti/"><img src="kontakt.jpg" style="height: 100px; width: 100px;" alt=""></a></td>
+                    <td><a href="https://www.vrijemeradar.hr/"><img src="clock.webp" alt="" style="height: 100px;width: 100px;"></a></td>
+                </tr>
+            </table>
+            <p style="font-size: x-large; padding: 2px;"><a href="#gore">nazad na vrh</a></p>
+        </div >
+    </div>
+</body>
+</html>
